@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: snow;
+    color: #a31621;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #a31621;
+    padding: 20px 10%;
+    margin-bottom: 20px;
+    color: snow;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.logo{
+    font-weight: bold;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-style: normal;
+}
+.nav-links li a{
+    position: relative;
+    font-size: 1.iem;
+    color: snow;
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 40px;
+}
+.nav-links li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scalex(0);
+    transition: transform .5s;    
+}
+.nav-links li a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.body{
+    width: 80%;
+    margin: 70px auto;
+}
+.c-us{
+    margin: 60px auto;
+}
+.c-information{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+.contact-form-container{
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px 0;
+}
+.contact-form-container h3{
+    text-align: left;
+    color: #a31621;
+    margin-bottom: 20px;
+}
+.contact-form{
+    margin-bottom: 15px;
+}
+.contact-form label{
+    display: block;
+    margin-bottom: 5px;
+    color: #a31621;
+    font-weight: bold;
+}
+.contact-form input, textarea{
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.contact-form textarea{
+    min-height: 80px;
+}
+button{
+    display: block  ;
+    background-color: transparent;
+    padding: 5px 10px 5px 10px;
+    color: #a31621;
+    border: 1px solid #a31621;
+    border-radius: 3px;
+}

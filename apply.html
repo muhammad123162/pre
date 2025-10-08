@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=Apply">
+    <link rel="stylesheet" href="apply.css">
+    <title>Apply</title>
+</head>
+<body>
+   <div class="whole">
+
+        <nav id="container">
+            <div class="logo"> MB International Academy</div>
+                <ul class="nav-links">
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="About Us.html"> About us </a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="admission.html"> Admissions </a></li>
+                    <li><a href="contact.html"> Contact </a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                </ul>
+        </nav>
+
+        <div class="body">
+            <h2>Student Admission Form</h2>
+
+           <form action="#" method="post">
+            <div class="admin-form">
+                <label for="name">Full Name</label>
+                <input type="text" name="user_name">
+            </div>
+
+            <div class="admin-form">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="user_dob">
+            </div>
+
+            <div class="admin-form">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" required>
+                    <option value="" disabled selected>- Select Gender -</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="admin-form">
+                <label for="photo">Passport Photo</label>
+                <input type="file" name="user_photo" accept="images/*">
+            </div>
+
+            <div class="admin-form">
+                <label for="p_number">Parent's Phone Number</label>
+                <input type="text" name="user_parentnumber">
+            </div>
+
+            <div class="admin-form">
+                <label for="l-school">Last School Attended</label>
+                <input type="text" name="user_last_school">
+            </div>
+
+            <div class="admin-form">
+                <label for="pclass">Previous Class</label>
+                <input type="text" name="user_pclass">
+            </div>
+
+            <div class="admin-form">
+                <label for="name">Class Applying For</label>
+               <select name="class_applying" id="class_applying" required>
+                    <option value="" disabled selected>- Select Class -</option>
+                    <option value="jss1">JSS1</option>
+                    <option value="jss2">JSS2</option>
+                    <option value="jss3">JSS3</option>
+                    <option value="sss1">SSS1</option>
+                    <option value="sss2">SSS2</option>
+                    <option value="sss3">SSS3</option>
+                </select>
+            </div>
+
+            <div class="admin-form">
+                <label for="birth certificate">Birth Certificate</label>
+                <input type="file" name="birth certificate">
+            </div>
+
+            <div class="admin-form">
+                <label for="report_card">Previous Report Card</label>
+                <input type="file" name="user_report_card">
+            </div> 
+
+            <div>
+            <label for="">
+                <input type="checkbox" name="declaration" required>
+                I comfirm that all information provided is true and complete.
+            </label>
+            </div><br>
+            
+            <button>Submit Application</button>
+           </form>
+
+        </div>
+
+   </div> 
+</body>
+</html>
